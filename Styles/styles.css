@@ -88,7 +88,7 @@ body {
   color: #F24B4B;
 }
 
-main {
+#main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,31 +96,32 @@ main {
   width: 100%;
   padding: 0px;
 }
-main .banner-container {
+#main-container .banner-container {
   display: flex;
   flex-direction: row;
-  height: 75vh;
+  height: 50vh;
   max-width: 100%;
   justify-content: center;
   align-items: center;
   background-color: #C9E7F2;
   padding: 20px 200px 20px;
+  gap: 100px;
 }
-main .banner-container .banner-description h1 {
+#main-container .banner-container .banner-description h1 {
   color: #1f3b57;
 }
-main .banner-container .banner-description p {
+#main-container .banner-container .banner-description p {
   color: #4a6c82;
 }
-main .banner-container .banner-description .buttoms-banner {
+#main-container .banner-container .banner-description .buttoms-banner {
   display: flex;
   flex-direction: row;
 }
-main .banner-container .banner-description .buttoms-banner a img {
+#main-container .banner-container .banner-description .buttoms-banner a img {
   width: 30px;
   height: 30px;
 }
-main .banner-container .banner-img img {
+#main-container .banner-container .banner-img img {
   width: 180px;
   height: 180px;
   object-fit: cover;
@@ -128,7 +129,7 @@ main .banner-container .banner-img img {
   object-position: center top;
   box-shadow: 2px 10px 20px 10px rgba(0, 0, 0, 0.15);
 }
-main .aboutme-container {
+#main-container #aboutme-container {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -138,14 +139,21 @@ main .aboutme-container {
   gap: 50px;
   background-color: white;
 }
-main .aboutme-container .experience-img {
+#main-container #aboutme-container .experience-img {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   border-radius: 20px;
 }
-main .aboutme-container .experience-img .contenido {
+#main-container #aboutme-container .experience-img img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+#main-container #aboutme-container .experience-img .contenido {
   position: relative;
   z-index: 3;
   background-color: rgba(255, 255, 255, 0.8);
@@ -156,26 +164,15 @@ main .aboutme-container .experience-img .contenido {
   max-width: 300px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-main .aboutme-container .experience-img .contenido h2 {
+#main-container #aboutme-container .experience-img .contenido h2 {
   color: rgb(0, 0, 0);
 }
-main .aboutme-container .experience-img::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 2;
-  border-radius: 20px;
-}
-main .aboutme-container .experience-description {
+#main-container #aboutme-container .experience-description {
   display: flex;
   flex-direction: column;
   width: 60%;
 }
-main .aboutme-container .experience-description button {
+#main-container #aboutme-container .experience-description button {
   padding: 15px 30px;
   font-family: "Inter", sans-serif;
   border-radius: 10px;
@@ -187,12 +184,12 @@ main .aboutme-container .experience-description button {
   font-size: 15px;
   width: 30%;
 }
-main .aboutme-container .experience-description button:hover {
+#main-container #aboutme-container .experience-description button:hover {
   background-color: #ff6f61;
   border: 2px solid #ff9f80;
   transform: scale(1.1);
 }
-main .skills-container {
+#main-container #skills-container {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -200,66 +197,52 @@ main .skills-container {
   padding: 20px 200px 20px;
   align-items: center;
 }
-main .skills-container .tecnologias {
+#main-container #skills-container .tecnologias {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
 }
-main .skills-container .tecnologias .container-tecnologias {
+#main-container #skills-container .tecnologias .container-tecnologias {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
-main .skills-container .tecnologias .container-tecnologias img {
-  width: 150px;
-  height: 150px;
+#main-container #skills-container .tecnologias .container-tecnologias img {
+  width: 100px;
+  height: 100px;
 }
-main .habilidades-blandas {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main .habilidades-blandas .contenedor-softskills {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  justify-items: center;
-  justify-content: center;
-  grid-column-gap: 80px;
-  grid-row-gap: 50px;
-}
-main .projects-container {
+#main-container #projects-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-main .projects-container .proyectos {
+#main-container #projects-container .proyectos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   gap: 50px;
   width: 100%;
 }
-main .projects-container .proyectos .caja-p {
+#main-container #projects-container .proyectos .caja-p {
   width: 100%;
   max-width: 250px;
   height: auto;
   text-align: center;
 }
-main .projects-container .proyectos .caja-p img {
+#main-container #projects-container .proyectos .caja-p img {
   height: 250px;
   width: 250px;
 }
-main .projects-container .button-proyect {
+#main-container #projects-container .button-proyect {
   margin-top: 30px;
   text-align: center;
   width: 100%;
 }
-main .projects-container .button-proyect button {
+#main-container #projects-container .button-proyect button {
   padding: 10px 20px;
   font-family: "Inter", sans-serif;
   border-radius: 10px;
@@ -271,21 +254,21 @@ main .projects-container .button-proyect button {
   font-size: 15px;
   width: 30%;
 }
-main .projects-container .button-proyect button:hover {
+#main-container #projects-container .button-proyect button:hover {
   background-color: #ff6f61;
   border: 2px solid #ff9f80;
   transform: scale(1.1);
 }
-main .recomendaciones {
+#main-container .recomendaciones {
   display: flex;
   flex-direction: column;
 }
-main .recomendaciones .container-personas {
+#main-container .recomendaciones .container-personas {
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
-main .recomendaciones .container-personas .card-1 {
+#main-container .recomendaciones .container-personas .card-1 {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -295,7 +278,7 @@ main .recomendaciones .container-personas .card-1 {
   box-shadow: 0 8px 10px rgba(122, 122, 122, 0.3);
   border-radius: 10px;
 }
-main .recomendaciones .container-personas .card-1 p {
+#main-container .recomendaciones .container-personas .card-1 p {
   display: flex;
   align-items: center;
   text-align: center;
@@ -305,7 +288,7 @@ main .recomendaciones .container-personas .card-1 p {
   margin: 0px;
   border-radius: 10px 10px 0px 0px;
 }
-main .recomendaciones .container-personas .card-1 .container {
+#main-container .recomendaciones .container-personas .card-1 .container {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -313,7 +296,7 @@ main .recomendaciones .container-personas .card-1 .container {
   background-color: #ebebeb;
   border-radius: 0px 0px 10px 10px;
 }
-main .recomendaciones .container-personas .card-1 .container .text {
+#main-container .recomendaciones .container-personas .card-1 .container .text {
   display: flex;
   height: 100%;
   width: 30%;
@@ -322,14 +305,14 @@ main .recomendaciones .container-personas .card-1 .container .text {
   justify-content: space-evenly;
   box-sizing: border-box;
 }
-main .recomendaciones .container-personas .card-1 .container .text .user {
+#main-container .recomendaciones .container-personas .card-1 .container .text .user {
   width: 0px;
   height: 0px;
   display: block;
   margin: 0px;
   padding: 0px;
 }
-main .recomendaciones .container-personas .card-1 .container img {
+#main-container .recomendaciones .container-personas .card-1 .container img {
   width: 60px;
   height: 60px;
   border-radius: 50%;

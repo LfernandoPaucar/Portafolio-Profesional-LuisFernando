@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Styles/styles.css">
     <title>LFernando</title>
 </head>
 
@@ -18,13 +18,13 @@
                     <li><a href="#aboutme-container">Sobre mi</a></li>
                     <li><a href="#projects-container">Proyectos</a></li>
                     <li><a href="#skills-container">Skills</a></li>
-                    <li><a href="#">Contactame</a></li>
+                    <li><a href="#contact-container">Contactame</a></li>
                 </ul>
             </div>
             <a href="#"><img src="./resource/logo1.svg" alt="#"></a>
         </div>
     </header>
-    <main id="main-container">
+    <main id="main-container" class="container">
         <section class="banner-container">
             <div class="banner-description">
                 <h1>¡Bienvenidos a mi portafolio! Soy LFernando desarrollador front-end especializado en
@@ -50,7 +50,7 @@
             <div class="experience-description">
                 <h2>Desarrollador front-end apasionado que crea sitios web atractivos</h2>
                 <p>Con una sólida experiencia en desarrollo front-end y una pasión por crear sitios web visualmente</p>
-                <button type="button">
+                <button type="button" class="btn btn-outline-danger">
                     Contáctame
                 </button>
             </div>
@@ -148,7 +148,45 @@
                 </div>
             </div>
         </section>
-        <section class="contact-container">
+        <section id="contact-container">
+            <div class="contact-description">
+                <h2>Contactame</h2>
+                <p>Estoy disponible para nuevos proyectos y colaboraciones. No dudes en ponerte en contacto conmigo a través del formulario a continuación.</p>
+            </div>
+            <form class="row g-3 mt-3">
+                <div class="col-6">
+                    <label for="inputName" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Escribe tu nombre">
+                </div>
+                <div class="col-6">
+                    <label for="inputLastName" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="inputLastName" placeholder="Escribe tus apellidos">
+                </div>
+                <div class="col-12">
+                    <label for="emailInput" form="label">Correo electronico</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu correo">
+                </div>
+                <div class="col-12">
+                    <label for="text" form="label">Asunto</label>
+                    <input type="text" class="form-control" id="asuntInput" placeholder="">
+                </div>
+                <div class="col-12">
+                    <label for="text" form="label">Detalles</label>
+                    <textarea type="text" class="form-control" id="mensajeInput" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <div class="col-12">
+                    <div clas="form-check">
+                        <input type="checkbox" id="checkTerms" class="form-check-input">
+                        <label for="checkTerms" class="form-check-label">Acepto los terminos y condiciones</label>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" id="boton-enviar">
+                        Enviar
+                    </button>
+                </div>
+            </form>
         </section>
     </main>
     <footer id="footer-container">

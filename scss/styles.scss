@@ -94,6 +94,7 @@ body {
     align-items: center;
     width: 100%;
     padding: 0px;
+    background-color: #f9f9f9;
     .banner-container{
         display: flex;
         flex-direction: row;
@@ -104,6 +105,7 @@ body {
         background-color: #C9E7F2;
         padding: 20px 200px 20px;
         gap: 100px;
+        margin-bottom: 20px;
         .banner-description{
             h1{
                 color: #1f3b57;
@@ -142,6 +144,7 @@ body {
         box-sizing: border-box;
         gap: 50px;
         background-color: white;
+        margin-bottom: 20px;
         .experience-img{
             display: flex;
             justify-content: center;
@@ -176,7 +179,7 @@ body {
             flex-direction: column;
             width: 60%;
             button{
-                    padding: 15px 30px;
+                    padding: 15px 30px 10px 30px;
                     font-family: 'Inter', sans-serif;
                     border-radius: 10px;
                     cursor: pointer;
@@ -185,7 +188,8 @@ body {
                     color: #fff;
                     transition: .3s ease;
                     font-size: 15px;
-                    width: 30%;
+                    width: 40%;
+                    
                     &:hover{
                         background-color: #ff6f61;
                         border: 2px solid #ff9f80;
@@ -200,6 +204,7 @@ body {
         width: 100%;
         padding: 20px 200px 20px;
         align-items: center;
+        margin-bottom: 20px;
         .tecnologias{
             display: flex;
             flex-direction: row;
@@ -223,6 +228,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 20px;
         .proyectos{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -245,7 +251,7 @@ body {
         text-align: center;
         width: 100%;
         button {
-                padding: 10px 20px;
+                padding: 10px 20px 10px 20px;
                 font-family: 'Inter', sans-serif;
                 border-radius: 10px;
                 cursor: pointer;
@@ -266,6 +272,7 @@ body {
     .recomendaciones{
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
         .container-personas{
             display: flex;
             flex-direction: column;
@@ -322,6 +329,54 @@ body {
             }
         }
     }
+}
+
+#contact-container{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 20px;
+    .contact-description{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+#boton-enviar{
+    padding: 15px 30px 10px 30px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: #ff9f80;
+    color: #fff;
+    transition: .3s ease;
+    font-size: 15px;
+    width: 20%;
+    
+    &:hover{
+        background-color: #ff6f61;
+        border: 2px solid #ff9f80;
+        transform: scale(1.1);}
+}
+
+#mensajeInput{
+    width: 100%;             /* ocupa todo el ancho del contenedor */
+    min-height: 120px;       /* altura mínima para que se vea grande */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    resize: vertical;
 }
 
 #footer-container{

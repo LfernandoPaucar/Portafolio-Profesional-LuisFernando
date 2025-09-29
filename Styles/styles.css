@@ -101,14 +101,13 @@ body {
 #main-container .banner-container {
   display: flex;
   flex-direction: row;
-  height: 50vh;
+  height: 80vh;
   max-width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #C9E7F2;
-  padding: 20px 200px 20px;
+  background-color: #fcc599;
+  padding: 20px 200px;
   gap: 100px;
-  margin-bottom: 20px;
 }
 #main-container .banner-container .banner-description h1 {
   color: #1f3b57;
@@ -125,23 +124,20 @@ body {
   height: 30px;
 }
 #main-container .banner-container .banner-img img {
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 50%;
   object-position: center top;
-  box-shadow: 2px 10px 20px 10px rgba(0, 0, 0, 0.15);
 }
 #main-container #aboutme-container {
   display: flex;
   align-items: center;
   flex-direction: row;
-  padding: 20px 200px 20px;
+  padding: 20px 200px;
   justify-content: space-around;
   box-sizing: border-box;
   gap: 50px;
   background-color: white;
-  margin-bottom: 20px;
 }
 #main-container #aboutme-container .experience-img {
   display: flex;
@@ -198,8 +194,10 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
-  padding: 20px 200px 20px;
+  padding: 20px 200px;
   align-items: center;
+}
+#main-container #skills-container h2 {
   margin-bottom: 20px;
 }
 #main-container #skills-container .tecnologias {
@@ -224,6 +222,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px 200px;
+}
+#main-container #projects-container h2 {
   margin-bottom: 20px;
 }
 #main-container #projects-container .proyectos {
@@ -265,78 +266,42 @@ body {
   border: 2px solid #ff9f80;
   transform: scale(1.1);
 }
-#main-container .recomendaciones {
+#main-container .formaciones {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
-}
-#main-container .recomendaciones .container-personas {
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-}
-#main-container .recomendaciones .container-personas .card-1 {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 500px;
-  height: 100%;
-  max-height: 300px;
-  box-shadow: 0 8px 10px rgba(122, 122, 122, 0.3);
-  border-radius: 10px;
+  padding: 20px 200px;
 }
-#main-container .recomendaciones .container-personas .card-1 p {
-  display: flex;
+#main-container .formaciones h2 {
+  margin-bottom: 20px;
+}
+#main-container .formaciones .card-formacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: stretch;
   align-items: center;
-  text-align: center;
-  justify-content: center;
-  background-color: white;
+  max-width: 100%;
+}
+#main-container .formaciones .card-formacion .icono {
+  width: 100px;
   height: 100px;
-  margin: 0px;
-  border-radius: 10px 10px 0px 0px;
+  background: #eee;
 }
-#main-container .recomendaciones .container-personas .card-1 .container {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #ebebeb;
-  border-radius: 0px 0px 10px 10px;
+#main-container .formaciones .card-formacion .icono img {
+  max-width: 100%;
+  max-height: 100%;
 }
-#main-container .recomendaciones .container-personas .card-1 .container .text {
-  display: flex;
-  height: 100%;
-  width: 30%;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-evenly;
-  box-sizing: border-box;
-}
-#main-container .recomendaciones .container-personas .card-1 .container .text .user {
-  width: 0px;
-  height: 0px;
-  display: block;
-  margin: 0px;
-  padding: 0px;
-}
-#main-container .recomendaciones .container-personas .card-1 .container img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-#contact-container {
+#main-container #contact-container {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  padding-left: 150px;
-  padding-right: 150px;
-  margin-bottom: 20px;
+  padding: 20px 200px;
 }
-#contact-container .contact-description {
+#main-container #contact-container .contact-description {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -344,8 +309,7 @@ body {
   align-items: center;
   text-align: center;
 }
-
-#boton-enviar {
+#main-container #boton-enviar {
   padding: 15px 30px 10px 30px;
   font-family: "Inter", sans-serif;
   border-radius: 10px;
@@ -357,13 +321,12 @@ body {
   font-size: 15px;
   width: 20%;
 }
-#boton-enviar:hover {
+#main-container #boton-enviar:hover {
   background-color: #ff6f61;
   border: 2px solid #ff9f80;
   transform: scale(1.1);
 }
-
-#mensajeInput {
+#main-container #mensajeInput {
   width: 100%; /* ocupa todo el ancho del contenedor */
   min-height: 120px; /* altura mínima para que se vea grande */
   padding: 10px;

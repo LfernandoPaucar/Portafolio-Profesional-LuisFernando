@@ -172,22 +172,61 @@ body {
   flex-direction: column;
   width: 60%;
 }
-#main-container #aboutme-container .experience-description button {
-  padding: 15px 30px 10px 30px;
-  font-family: "Inter", sans-serif;
-  border-radius: 10px;
+#main-container #aboutme-container .experience-description .button-contactame {
+  outline: none;
   cursor: pointer;
-  border: 2px solid transparent;
-  background-color: #ff9f80;
-  color: #fff;
-  transition: 0.3s ease;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
   font-size: 15px;
-  width: 40%;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #dfd116;
+  color: ghostwhite;
+  margin-top: 10px;
+  width: 50%;
+  text-align: center;
 }
-#main-container #aboutme-container .experience-description button:hover {
-  background-color: #ff6f61;
-  border: 2px solid #ff9f80;
-  transform: scale(1.1);
+#main-container #aboutme-container .experience-description .button-contactame span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+#main-container #aboutme-container .experience-description .button-contactame:hover span {
+  color: black;
+}
+#main-container #aboutme-container .experience-description .button-contactame::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#main-container #aboutme-container .experience-description .button-contactame::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#main-container #aboutme-container .experience-description .button-contactame::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+#main-container #aboutme-container .experience-description .button-contactame:hover::before {
+  transform: translate3d(100%, 0, 0);
 }
 #main-container #skills-container {
   display: flex;
@@ -250,21 +289,58 @@ body {
   width: 100%;
 }
 #main-container #projects-container .button-proyect button {
-  padding: 10px 20px 10px 20px;
-  font-family: "Inter", sans-serif;
-  border-radius: 10px;
+  outline: none;
   cursor: pointer;
-  border: 2px solid transparent;
-  background-color: #ff9f80;
-  color: #fff;
-  transition: 0.3s ease;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
   font-size: 15px;
-  width: 30%;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #dfd116;
+  color: ghostwhite;
+  width: 50;
 }
-#main-container #projects-container .button-proyect button:hover {
-  background-color: #ff6f61;
-  border: 2px solid #ff9f80;
-  transform: scale(1.1);
+#main-container #projects-container .button-proyect button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+#main-container #projects-container .button-proyect button:hover span {
+  color: black;
+}
+#main-container #projects-container .button-proyect button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#main-container #projects-container .button-proyect button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#main-container #projects-container .button-proyect button::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+#main-container #projects-container .button-proyect button:hover::before {
+  transform: translate3d(100%, 0, 0);
 }
 #main-container .formaciones {
   display: flex;
@@ -310,21 +386,57 @@ body {
   text-align: center;
 }
 #main-container #boton-enviar {
-  padding: 15px 30px 10px 30px;
-  font-family: "Inter", sans-serif;
-  border-radius: 10px;
+  outline: none;
   cursor: pointer;
-  border: 2px solid transparent;
-  background-color: #ff9f80;
-  color: #fff;
-  transition: 0.3s ease;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
   font-size: 15px;
-  width: 20%;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #dfd116;
+  color: ghostwhite;
 }
-#main-container #boton-enviar:hover {
-  background-color: #ff6f61;
-  border: 2px solid #ff9f80;
-  transform: scale(1.1);
+#main-container #boton-enviar span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+#main-container #boton-enviar:hover span {
+  color: black;
+}
+#main-container #boton-enviar::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#main-container #boton-enviar::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#main-container #boton-enviar::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+#main-container #boton-enviar:hover::before {
+  transform: translate3d(100%, 0, 0);
 }
 #main-container #mensajeInput {
   width: 100%; /* ocupa todo el ancho del contenedor */

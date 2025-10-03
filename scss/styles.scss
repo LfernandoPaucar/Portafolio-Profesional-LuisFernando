@@ -3,6 +3,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&family=Poetsen+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import "button";
 
 h1, h2, h3 {
     font-family: "Roboto Condensed", sans-serif;
@@ -174,22 +175,11 @@ body {
             display: flex;
             flex-direction: column;
             width: 60%;
-            button{
-                    padding: 15px 30px 10px 30px;
-                    font-family: 'Inter', sans-serif;
-                    border-radius: 10px;
-                    cursor: pointer;
-                    border: 2px solid transparent;
-                    background-color: #ff9f80;
-                    color: #fff;
-                    transition: .3s ease;
-                    font-size: 15px;
-                    width: 40%;
-                    
-                    &:hover{
-                        background-color: #ff6f61;
-                        border: 2px solid #ff9f80;
-                        transform: scale(1.1);}
+            .button-contactame{
+                @include boton-estilo(#eb7515, ghostwhite);
+                margin-top: 10px;
+                width: 50%;
+                text-align: center;
             }
         }
     }
@@ -252,21 +242,8 @@ body {
         text-align: center;
         width: 100%;
         button {
-                padding: 10px 20px 10px 20px;
-                font-family: 'Inter', sans-serif;
-                border-radius: 10px;
-                cursor: pointer;
-                border: 2px solid transparent;
-                background-color: #ff9f80;
-                color: #fff;
-                transition: .3s ease;
-                font-size: 15px;
-                width: 30%;
-                &:hover{
-                    background-color: #ff6f61;
-                    border: 2px solid #ff9f80;
-                    transform: scale(1.1);
-                    }
+                @include boton-estilo(#eb7515, ghostwhite);
+                width: 50;
             }
         }
     }
@@ -316,21 +293,7 @@ body {
 }
 
 #boton-enviar{
-    padding: 15px 30px 10px 30px;
-    font-family: 'Inter', sans-serif;
-    border-radius: 10px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    background-color: #ff9f80;
-    color: #fff;
-    transition: .3s ease;
-    font-size: 15px;
-    width: 20%;
-    
-    &:hover{
-        background-color: #ff6f61;
-        border: 2px solid #ff9f80;
-        transform: scale(1.1);}
+    @include boton-estilo(#dadd27, ghostwhite);
 }
 
 #mensajeInput{

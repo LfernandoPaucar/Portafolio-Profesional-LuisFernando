@@ -122,6 +122,10 @@ body {
 #main-container .banner-container .banner-description .buttoms-banner a img {
   width: 30px;
   height: 30px;
+  transition: all 0.3s ease;
+}
+#main-container .banner-container .banner-description .buttoms-banner a img:hover {
+  transform: scale(1.2);
 }
 #main-container .banner-container .banner-img img {
   width: 250px;
@@ -278,10 +282,37 @@ body {
   max-width: 250px;
   height: auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 #main-container #projects-container .proyectos .caja-p img {
   height: 250px;
   width: 250px;
+}
+#main-container #projects-container .proyectos .caja-p .button-ver {
+  margin-top: 0px;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  padding: 7px;
+}
+#main-container #projects-container .proyectos .caja-p .button-ver:hover {
+  transform: scale(1.2);
+}
+#main-container #projects-container .proyectos .caja-p .button-ver a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #000;
+}
+#main-container #projects-container .proyectos .caja-p .button-ver a img {
+  width: 30px;
+  height: 30px;
 }
 #main-container #projects-container .button-proyect {
   margin-top: 30px;

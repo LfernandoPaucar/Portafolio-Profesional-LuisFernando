@@ -180,12 +180,6 @@ body {
             display: flex;
             flex-direction: column;
             width: 60%;
-            .button-contactame{
-                @include boton-estilo(#eb7515, ghostwhite);
-                margin-top: 10px;
-                width: 50%;
-                text-align: center;
-            }
         }
     }
     #skills-container{
@@ -243,28 +237,29 @@ body {
                 img{
                     height: 250px;
                     width: 250px;
-                }
+                    object-fit: cover;
+                    border-radius: 15px;
+                    }
                 .button-ver{
                     margin-top: 0px;
                     width: 50%;
                     text-align: center;
-                    display: flex;
-                    flex-direction: column;
                     border-radius: 20px;
                     transition: all 0.3s ease;
                     padding: 7px;
-                            &:hover{
-                                transform: scale(1.2);
-                            }
-                    a{
-                        display: flex;
-                        flex-direction: row;
-                        text-decoration: none;
-                        color: #000;
-                        img{
+                    display: flex;
+                    flex-direction: row;
+                    text-decoration: none;
+                    color: #000;
+                    align-items: center;
+                    gap: 4px;
+                    border: 1px solid #000;
+                    img{
                             width: 30px;
                             height: 30px;
                         }
+                    &:hover{
+                        transform: scale(1.1);
                     }
                 }
             }
@@ -273,9 +268,10 @@ body {
         margin-top: 30px;
         text-align: center;
         width: 100%;
-        button {
-                @include boton-estilo(#eb7515, ghostwhite);
-                width: 50;
+        a {
+            @include boton-estilo(#eb7515, ghostwhite);
+            width: 50;
+            text-decoration: none;
             }
         }
     }

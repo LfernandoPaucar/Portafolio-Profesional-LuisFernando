@@ -176,62 +176,6 @@ body {
   flex-direction: column;
   width: 60%;
 }
-#main-container #aboutme-container .experience-description .button-contactame {
-  outline: none;
-  cursor: pointer;
-  border: none;
-  padding: 0.9rem 2rem;
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  position: relative;
-  display: inline-block;
-  letter-spacing: 0.05rem;
-  font-weight: 700;
-  font-size: 15px;
-  border-radius: 500px;
-  overflow: hidden;
-  background: #dfd116;
-  color: ghostwhite;
-  margin-top: 10px;
-  width: 50%;
-  text-align: center;
-}
-#main-container #aboutme-container .experience-description .button-contactame span {
-  position: relative;
-  z-index: 10;
-  transition: color 0.4s;
-}
-#main-container #aboutme-container .experience-description .button-contactame:hover span {
-  color: black;
-}
-#main-container #aboutme-container .experience-description .button-contactame::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-#main-container #aboutme-container .experience-description .button-contactame::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-#main-container #aboutme-container .experience-description .button-contactame::before {
-  content: "";
-  background: #000;
-  width: 120%;
-  left: -10%;
-  transform: skew(30deg);
-  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-}
-#main-container #aboutme-container .experience-description .button-contactame:hover::before {
-  transform: translate3d(100%, 0, 0);
-}
 #main-container #skills-container {
   display: flex;
   flex-direction: column;
@@ -290,36 +234,37 @@ body {
 #main-container #projects-container .proyectos .caja-p img {
   height: 250px;
   width: 250px;
+  object-fit: cover;
+  border-radius: 15px;
 }
 #main-container #projects-container .proyectos .caja-p .button-ver {
   margin-top: 0px;
   width: 50%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
   border-radius: 20px;
   transition: all 0.3s ease;
   padding: 7px;
-}
-#main-container #projects-container .proyectos .caja-p .button-ver:hover {
-  transform: scale(1.2);
-}
-#main-container #projects-container .proyectos .caja-p .button-ver a {
   display: flex;
   flex-direction: row;
   text-decoration: none;
   color: #000;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #000;
 }
-#main-container #projects-container .proyectos .caja-p .button-ver a img {
+#main-container #projects-container .proyectos .caja-p .button-ver img {
   width: 30px;
   height: 30px;
+}
+#main-container #projects-container .proyectos .caja-p .button-ver:hover {
+  transform: scale(1.1);
 }
 #main-container #projects-container .button-proyect {
   margin-top: 30px;
   text-align: center;
   width: 100%;
 }
-#main-container #projects-container .button-proyect button {
+#main-container #projects-container .button-proyect a {
   outline: none;
   cursor: pointer;
   border: none;
@@ -337,16 +282,17 @@ body {
   background: #dfd116;
   color: ghostwhite;
   width: 50;
+  text-decoration: none;
 }
-#main-container #projects-container .button-proyect button span {
+#main-container #projects-container .button-proyect a span {
   position: relative;
   z-index: 10;
   transition: color 0.4s;
 }
-#main-container #projects-container .button-proyect button:hover span {
+#main-container #projects-container .button-proyect a:hover span {
   color: black;
 }
-#main-container #projects-container .button-proyect button::before {
+#main-container #projects-container .button-proyect a::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -354,7 +300,7 @@ body {
   height: 100%;
   z-index: 0;
 }
-#main-container #projects-container .button-proyect button::after {
+#main-container #projects-container .button-proyect a::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -362,7 +308,7 @@ body {
   height: 100%;
   z-index: 0;
 }
-#main-container #projects-container .button-proyect button::before {
+#main-container #projects-container .button-proyect a::before {
   content: "";
   background: #000;
   width: 120%;
@@ -370,7 +316,7 @@ body {
   transform: skew(30deg);
   transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
-#main-container #projects-container .button-proyect button:hover::before {
+#main-container #projects-container .button-proyect a:hover::before {
   transform: translate3d(100%, 0, 0);
 }
 #main-container .formaciones {

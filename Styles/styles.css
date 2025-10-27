@@ -224,12 +224,17 @@ body {
 #main-container #projects-container .proyectos .caja-p {
   width: 100%;
   max-width: 250px;
-  height: auto;
+  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
+}
+#main-container #projects-container .proyectos .caja-p .stacks img {
+  width: 30px;
+  height: 30px;
 }
 #main-container #projects-container .proyectos .caja-p img {
   height: 250px;
